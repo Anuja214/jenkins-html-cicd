@@ -1,5 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+
+/* Navigation */
+
+nav {
+    height: 70px;
+    background: #111827;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+
+/* Hero Section */
+
+.hero {
+    min-height: 600px;
+    padding: 90px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background: linear-gradient(135deg, #eef2ff, #ffffff);
+}
+
+.hero-content {
+    max-width: 620px;
+}
+
+.tagline {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #4f46e5;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: #111827;
+}
+
+.description {
+    font-size: 19px;
+    line-height: 1.7;
+    color: #6b7280;
+    margin-bottom: 35px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3730a3;
+}
+
+.learn-btn {
+    text-decoration: none;
+    color: #374151;
+    font-weight: bold;
+}
+
+
+/* Pipeline Card */
+
+.pipeline-card {
+    width: 360px;
+    padding: 30px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.pipeline-card h3 {
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.pipeline-step {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pipeline-step span {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #dcfce7;
+    color: #16a34a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.pipeline-step strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.pipeline-step small {
+    color: #6b7280;
+}
+
+.line {
+    height: 25px;
+    border-left: 2px dashed #cbd5e1;
+    margin-left: 18px;
+}
+
+
+/* About */
+
+.about {
     text-align: center;
-    margin-top: 100px;
+    padding: 80px 15%;
+    background: white;
+}
+
+.about h2,
+.features h2,
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #6b7280;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* Features */
+
+.features {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    width: 300px;
+    background: white;
+    padding: 35px 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.feature-card p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+
+/* Contact */
+
+.contact {
+    text-align: center;
+    padding: 90px 20px;
+    background: #111827;
+    color: white;
+}
+
+.contact p {
+    color: #d1d5db;
+    margin-bottom: 30px;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #0b1120;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .pipeline-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .feature-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
 }
