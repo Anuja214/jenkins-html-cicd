@@ -1,3 +1,5 @@
 function showMessage() {
-    alert("CI/CD using Jenkins is working!");
+    alert("🚀 CI/CD Pipeline is ready! Jenkins deployment is working successfully.");
 }
+
+console.log("DevFlow CI/CD website loaded successfully.");
