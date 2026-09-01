@@ -18,7 +18,7 @@ pipeline {
             }
         }
 
-        sstage('Test') {
+        stage('Test') {
     steps {
         echo 'Testing HTML file...'
         bat 'findstr /I /C:"DOCTYPE" index.html'
