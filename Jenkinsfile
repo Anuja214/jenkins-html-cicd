@@ -18,13 +18,12 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                echo 'Testing HTML file...'
-                bat 'findstr /C:"<html>" index.html'
-            }
-        }
-
+        sstage('Test') {
+    steps {
+        echo 'Testing HTML file...'
+        bat 'findstr /I /C:"DOCTYPE" index.html'
+    }
+}
         stage('Deploy') {
             steps {
                 echo 'Deploying website...'
