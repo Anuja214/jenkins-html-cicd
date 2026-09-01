@@ -1,12 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My CI/CD Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Web Application</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Welcome to Jenkins CI/CD</h1>
-    <button onclick="showMessage()">Click Me</button>
+
+    <nav>
+        <div class="logo">DevFlow</div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">CONTINUOUS INTEGRATION & DEPLOYMENT</p>
+
+            <h1>Build. Test. Deploy.</h1>
+
+            <p class="description">
+                A modern web application demonstrating automated
+                CI/CD using Jenkins and GitHub.
+            </p>
+
+            <div class="buttons">
+                <button onclick="showMessage()">Get Started</button>
+                <a href="#features" class="learn-btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="pipeline-card">
+            <h3>CI/CD Pipeline</h3>
+
+            <div class="pipeline-step">
+                <span>✓</span>
+                <div>
+                    <strong>Code</strong>
+                    <small>GitHub Repository</small>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="pipeline-step">
+                <span>✓</span>
+                <div>
+                    <strong>Build</strong>
+                    <small>Jenkins Automation</small>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="pipeline-step">
+                <span>✓</span>
+                <div>
+                    <strong>Test</strong>
+                    <small>Automated Testing</small>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="pipeline-step">
+                <span>✓</span>
+                <div>
+                    <strong>Deploy</strong>
+                    <small>Web Server</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <h2>About This Project</h2>
+
+        <p>
+            This project demonstrates how Jenkins can automate the
+            complete software delivery process from source code
+            integration to deployment.
+        </p>
+    </section>
+
+
+    <section class="features" id="features">
+        <h2>CI/CD Features</h2>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <div class="icon">⚙</div>
+                <h3>Automated Build</h3>
+                <p>
+                    Jenkins automatically builds the application
+                    whenever changes are introduced.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">✓</div>
+                <h3>Testing</h3>
+                <p>
+                    Automated testing helps identify errors before
+                    deployment.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🚀</div>
+                <h3>Fast Deployment</h3>
+                <p>
+                    Successful builds are automatically deployed
+                    to the web server.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <h2>Ready to Deploy?</h2>
+
+        <p>
+            Experience the power of automation with Jenkins CI/CD.
+        </p>
+
+        <button onclick="showMessage()">Start Pipeline</button>
+    </section>
+
+
+    <footer>
+        <p>© 2026 DevFlow | CI/CD Web Application</p>
+        <p>Powered by Jenkins + GitHub</p>
+    </footer>
+
     <script src="script.js"></script>
+
 </body>
 </html>
